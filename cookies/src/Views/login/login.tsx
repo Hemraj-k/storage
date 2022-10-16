@@ -40,8 +40,8 @@ const Login = () => {
       </form>
       Login
       <form method="post">
-        <input type="text" className="input" name="email" />
-        <input type="password" className="input" name="password" />
+        {/* <input type="text" className="input" name="email" />
+        <input type="password" className="input" name="password" /> */}
         <button onClick={LoginHandler}>Login</button>
       </form>
     </div>
