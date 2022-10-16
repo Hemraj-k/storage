@@ -14,10 +14,6 @@ const Login = () => {
       password: e.target.password.value,
     };
 
-    console.log('====================================');
-    console.log(data);
-    console.log('====================================');
-
     fetch('http://localhost:3004/users', {
       method: 'POST', // or 'PUT'
       headers: {
@@ -36,8 +32,14 @@ const Login = () => {
 
   return (
     <div>
-      Login
+      Register
       <form onSubmit={submitHandler} method="post">
+        <input type="text" className="input" name="email" />
+        <input type="password" className="input" name="password" />
+        <button>Register</button>
+      </form>
+      Login
+      <form method="post">
         <input type="text" className="input" name="email" />
         <input type="password" className="input" name="password" />
         <button onClick={LoginHandler}>Login</button>
