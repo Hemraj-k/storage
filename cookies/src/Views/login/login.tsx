@@ -5,8 +5,6 @@ const Login = () => {
   const cookies = new Cookies();
   const LoginHandler = (e: any) => {
     e.preventDefault();
-    cookies.set('auth', 'true', { path: '/' });
-    // window.location.reload();
 
     fetch('http://localhost:3004/users')
       .then((response) => response.json())
